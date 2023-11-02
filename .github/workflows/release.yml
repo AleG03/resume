@@ -1,8 +1,8 @@
 name: Build and Release resume
 on:
   push:
-    branches:
-      - 'main'
+    tags:
+      - 'v*.*.*'
 jobs:
   build_latex:
     runs-on: ubuntu-latest
