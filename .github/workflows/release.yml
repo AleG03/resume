@@ -1,0 +1,21 @@
+name: Build and Release resume
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: AlessandroGallo_CV.tex
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: AlessandroGallo_CV.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}

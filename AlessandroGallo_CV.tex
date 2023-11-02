@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%
+%% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+%% LianTze Lim (liantze@gmail.com), based on the
+%% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+% Based on the project of pusi77. You can find the source at: https://github.com/pusi77/resume
+
+\documentclass[10pt,a4paper]{altacv}
+\usepackage{hyperref}
+
+% Change the page layout if you need to
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Alessandro Gallo}
+\tagline{DevOps Engineer}
+\photo{3cm}{cv-pic}
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+  \location{Pavia, Italy}
+  \email{gc.ale03@gmail.com}
+  % \homepage{\href{https://pusi77.eu.org}{pusi77.eu.org}}
+  % \github{\href{https://github.com/pusi77}{@pusi77}}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+%\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[sidebar]{Experience}
+\cvevent{AWS DevOps Engineer}{beSharp}{July 2023 -- Present}{Pavia,Italy}
+\begin{itemize}
+\item Design and develop microservices using container orchestration tools, REST APIs, and agile methodologies.
+\item Set up CI/CD pipelines using integration tools like AWS Code Suite, AzureDevOps, and Docker.
+\item Proficient in writing Python and Bash scripts, as well as Typescript code.
+\item Design and manage scalable cloud-based infrastructures using Cloudformation, CDK, and Terraform.
+\smallskip
+\end{itemize}
+
+\cvevent{Internship}{beSharp}{February 2023 -- July 2023}{Pavia,Italy}
+\begin{itemize}
+\item Design and development of a "Landing Zone" concept.
+\item Defining the Principles of Cloud Computing.
+\smallskip
+\end{itemize}
+
+
+\cvsection{Education}
+\cvevent{Diploma of Higher Education for IT Infrastructure, Cloud and Data Security}{ITS Angelo Rizzoli}{ September 2021 -- July 2023 }{}
+\smallskip
+\cvevent{High School Diploma}{L. Cossa Institute}{ September 2014 -- June 2019 }{}
+\smallskip
+
+\cvsection{Certifications}
+\cvevent{AWS Certified Cloud Practitioner}{ AWS }{ July 2023 }{}
+\cvevent{Azure Fundamentals - Microsoft 365 Fundamentals - Security, Compliance and Identity Fundamentals}{ Microsoft }{ April 2023 -- June 2023 }{}
+\cvevent{Zyxel Certified Network Engineer}{ Zyxel }{ September 2022 }{}
+\cvevent{Network Defense - Cyber Threat Management - Endpoint Security}{ Cisco }{ 2022 }{}
+
+
+\end{document}
