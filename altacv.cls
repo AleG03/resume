@@ -199,6 +199,17 @@
   \medskip\normalsize
 }
 
+\newcommand{\cvcertifications}[4]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip\normalsize
+  \ifstrequal{#2}{}{}{
+  {#2}\par
+  \smallskip}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar\hspace{0.5em}#3}}}%
+  \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#4}}}\par
+  \medskip\normalsize
+}
+
 \newcommand{\cvachievement}[3]{%
   \begin{tabularx}{\linewidth}{@{}p{2em} @{\hspace{1ex}} >{\raggedright\arraybackslash}X@{}}
   \multirow{4}{*}{\Large\color{accent}#1} & \bfseries\textcolor{emphasis}{#2}\\

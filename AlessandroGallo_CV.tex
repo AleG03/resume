@@ -12,8 +12,6 @@
 %% version 2003/12/01 or later.
 %%%%%%%%%%%%%%%%
 
-% Based on the project of pusi77. You can find the source at: https://github.com/pusi77/resume
-
 \documentclass[9.5pt,a4paper]{altacv}
 \usepackage{hyperref}
 
@@ -54,7 +52,7 @@
   % You can add your own with \printinfo{symbol}{detail}
   \location{Pavia, Italy}
   \email{gc.ale03@gmail.com}
-  % \homepage{\href{https://alessandrogallo.eu.org}{alessandrogallo.eu.org}}
+  \homepage{\href{https://alessandrogallo.eu.org}{alessandrogallo.eu.org}}
   % \github{\href{https://github.com/AleG03}{@AleG03}}
 }
 
@@ -67,19 +65,12 @@
 \AtBeginEnvironment{itemize}{\small}
 
 \cvsection[sidebar]{Experience}
-\cvevent{AWS DevOps Engineer}{beSharp}{July 2023 -- Present}{Pavia,Italy}
+\cvevent{AWS DevOps Engineer}{beSharp}{February 2023 -- Present}{Pavia,Italy}
 \begin{itemize}
-\item Design and develop microservices using container orchestration tools, REST APIs, and agile methodologies.
-\item Set up CI/CD pipelines using integration tools like AWS Code Suite, AzureDevOps, and Docker.
+\item Led migration of legacy applications to a \textbf{microservices} architecture, enhancing the reliability and scalability of the system.
+\item Implemented \textbf{CI/CD pipelines} using integration tools such as the AWS Code Suite, AzureDevOps, and Docker.
 \item Proficient in writing Python and Bash scripts, as well as Typescript code.
-\item Design and manage scalable cloud-based infrastructures using Cloudformation, CDK, and Terraform.
-\smallskip
-\end{itemize}
-
-\cvevent{Internship}{beSharp}{February 2023 -- July 2023}{Pavia,Italy}
-\begin{itemize}
-\item Design and development of a "Landing Zone" concept.
-\item Defining the Principles of Cloud Computing.
+\item Architected and developed scalable cloud-based infrastructures using Cloudformation, CDK, and Terraform.
 \smallskip
 \end{itemize}
 
@@ -91,10 +82,10 @@
 \smallskip
 
 \cvsection{Certifications}
-\cvevent{AWS Certified Developer - Associate}{}{ July 2024 }{}
-\cvevent{AWS Certified SysOps Administrator - Associate}{}{ April 2024 }{}
-\cvevent{AWS Certified Solutions Architect - Associate}{}{ December 2023 }{}
-\cvevent{Azure Fundamentals - Microsoft 365 Fundamentals - Microsoft Security, Compliance and Identity Fundamentals}{}{ April 2023 -- June 2023 }{}
-\cvevent{Zyxel Certified Network Engineer}{}{ September 2022 }{}
-\cvevent{Cisco Network Defense - Cisco Cyber Threat Management - Cisco Endpoint Security}{}{ 2022 }{}
+\cvcertifications{AWS Certified Solutions Architect - Professional}{}{ December 2024 }{}
+\cvcertifications{AWS Certified Developer - Associate}{}{ July 2024 }{}
+\cvcertifications{AWS Certified SysOps Administrator - Associate}{}{ April 2024 }{}
+\cvcertifications{AWS Certified Solutions Architect - Associate}{}{ December 2023 }{}
+\cvcertifications{Microsoft}{Azure Fundamentals - Microsoft 365 Fundamentals - Microsoft Security, Compliance and Identity Fundamentals}{ 2023 }{}
+\cvcertifications{Network}{Cisco Cyber Threat Management - Cisco Endpoint Security - Cisco Network Defense - Zyxel Certified Network Engineer}{ 2022 }{}
 \end{document}
